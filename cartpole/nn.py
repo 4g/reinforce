@@ -64,3 +64,5 @@ print model.summary()
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['binary_accuracy'])
 
 model.fit([O, A], Y, epochs=10, batch_size=1024,validation_split=0.5,shuffle=True,class_weight={0:.95, 1:.05})
+
+error = .95
